@@ -1,0 +1,4 @@
+round_id,timestamp_utc,crash_multiplier,bet_size,cashout_target,cashed_out,profit_units,notes
+1,2026-04-01T12:00:00Z,1.42,1.0,1.50,0,-1.00,sample row
+2,2026-04-01T12:01:00Z,2.33,1.0,1.80,1,0.80,sample row
+3,2026-04-01T12:02:00Z,1.06,1.0,1.20,0,-1.00,sample row
