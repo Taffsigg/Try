@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internal Finance Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="loginView" class="centered-card">
+      <h1>Internal Finance Manager</h1>
+      <p>Secure login for internal teams</p>
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+      <small>Default: admin@internal.local / Admin123!</small>
+    </div>
+
+    <div id="appView" class="app hidden">
+      <aside class="sidebar">
+        <h2>Finance App</h2>
+        <nav>
+          <button data-section="dashboard">Dashboard</button>
+          <button data-section="clients">Clients</button>
+          <button data-section="transactions">Transactions</button>
+          <button data-section="reports">Reports</button>
+        </nav>
+        <div class="footer-controls">
+          <div id="userInfo"></div>
+          <button id="logoutBtn">Logout</button>
+        </div>
+      </aside>
+
+      <main class="content">
+        <section id="dashboard" class="section"></section>
+        <section id="clients" class="section hidden"></section>
+        <section id="transactions" class="section hidden"></section>
+        <section id="reports" class="section hidden"></section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
